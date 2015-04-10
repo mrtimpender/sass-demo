@@ -3,6 +3,11 @@
 	width:90%;
 	max-width: 800px;
 	margin:0 auto 20px;
+	@include clearfix;
+
+	@include breakpoint($bigscreen){
+		max-width: 1500px;
+	}
 }
 
 .column{
@@ -16,27 +21,26 @@
 	&:last-of-type{
 		margin-right:0;
 	}
-}
 
-.column.two-third{
+	&.two-third{
 	width:65%;
-}
+	}
 
-.column.one-half{
+	&.one-half{
 	width:49%;
-}
+	}
 
-.column.one-third{
+	&.one-third{
 	width: 32%;
-}
+	}
 
-/* -- Fourth Column
-.column.one-fourth{
-	width: 
-}
---*/
+	&.one-fourth{
+	width: 24%; /* 96%-4 */
+	}
+	
+	@include breakpoint($tablet) {
+		width:100% !important;
+		margin-right:0;
+	}
 
-.column:last-of-type{
-	margin-right: 0;
 }
-

@@ -1,26 +1,12 @@
 /* Import Variables  */
 @import "variables";
+@import "mixins";
 @import "grid";
 
 
 /* Box Sizing */
 * { box-sizing: border-box; }
 
-/* Clearfix */
-
-.clearfix {
-  *zoom: 1;
-}
-
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-
-.clearfix:after {
-  clear: both;
-}
 
 /* Standards */
 
@@ -32,7 +18,7 @@ body{
 }
 
 a{
-	transition:333ms all ease-in-out;
+	@include ease;
 	text-decoration: none;
 	color:$linkcolor;
 
@@ -58,9 +44,11 @@ header{
 	background: $headercolor;
 	padding:10px;
 	margin-bottom: 20px;
-	@media (max-width: $breakpoint){
-		text-align: center;}
 
+	@include breakpoint ($tablet) {
+		text-align: center;
+	}
+	
 	body#home & {
 			margin-bottom: 0;
 	}
@@ -75,7 +63,7 @@ header{
 	float:left;
 	width:65px;
 
-	@media (max-width: $breakpoint){
+	@include breakpoint ($tablet) {
 			float:none;
 			width:80px;
 	}
@@ -87,7 +75,7 @@ header{
 		float:right;
 		text-align: right;
 		margin-top: 21px;
-		@media (max-width: $breakpoint){
+		@include breakpoint ($tablet) {
 			float:none;
 			text-align: center;}
 
@@ -130,13 +118,5 @@ footer{
 	color:white;
 	text-shadow:0 0 10px #A3BAC3;
 	text-align: center;
-	}
-}
-
-/*-- Responsive --*/
-@media (max-width: $breakpoint){
-	.column{
-		width:100% !important;
-		margin-right: 0;
 	}
 }

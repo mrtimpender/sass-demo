@@ -3,7 +3,16 @@
 .row {
   width: 90%;
   max-width: 800px;
-  margin: 0 auto 20px; }
+  margin: 0 auto 20px;
+  *zoom: 1; }
+  .row:before, .row:after {
+    content: " ";
+    display: table; }
+  .row:after {
+    clear: both; }
+  @media (min-width: 1600px) {
+    .row {
+      max-width: 1500px; } }
 
 .column {
   float: left;
@@ -14,39 +23,23 @@
       margin-right: 0; } }
   .column:last-of-type {
     margin-right: 0; }
-
-.column.two-third {
-  width: 65%; }
-
-.column.one-half {
-  width: 49%; }
-
-.column.one-third {
-  width: 32%; }
-
-/* -- Fourth Column
-.column.one-fourth{
-	width: 
-}
---*/
-.column:last-of-type {
-  margin-right: 0; }
+  .column.two-third {
+    width: 65%; }
+  .column.one-half {
+    width: 49%; }
+  .column.one-third {
+    width: 32%; }
+  .column.one-fourth {
+    width: 24%
+    /* 96%-4 */ }
+  @media (max-width: 800px) {
+    .column {
+      width: 100% !important;
+      margin-right: 0; } }
 
 /* Box Sizing */
 * {
   box-sizing: border-box; }
-
-/* Clearfix */
-.clearfix {
-  *zoom: 1; }
-
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table; }
-
-.clearfix:after {
-  clear: both; }
 
 /* Standards */
 body {
@@ -69,7 +62,7 @@ header {
   background: #A3B18A;
   padding: 10px;
   margin-bottom: 20px; }
-  @media (max-width: 500px) {
+  @media (max-width: 800px) {
     header {
       text-align: center; } }
   body#home header {
@@ -80,7 +73,7 @@ header {
 .logo {
   float: left;
   width: 65px; }
-  @media (max-width: 500px) {
+  @media (max-width: 800px) {
     .logo {
       float: none;
       width: 80px; } }
@@ -89,7 +82,7 @@ header nav {
   float: right;
   text-align: right;
   margin-top: 21px; }
-  @media (max-width: 500px) {
+  @media (max-width: 800px) {
     header nav {
       float: none;
       text-align: center; } }
@@ -123,11 +116,5 @@ footer {
     color: white;
     text-shadow: 0 0 10px #A3BAC3;
     text-align: center; }
-
-/*-- Responsive --*/
-@media (max-width: 500px) {
-  .column {
-    width: 100% !important;
-    margin-right: 0; } }
 
 /*# sourceMappingURL=style.css.map */

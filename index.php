@@ -6,7 +6,7 @@
 <?php include 'header.php'; ?>
 
 	<div class="hero">
-		<div class="row clearfix">
+		<div class="row">
 			<?php if (empty($userName)) : ?>
 				<h1>Hey, I don't recognize you.  Please <a href="login.php">login here.</a></h1>
 			<?php else : ?>
@@ -15,7 +15,7 @@
 		</div>
 	</div>
 
-	<div class="row clearfix">
+	<div class="row">
 		<div class="column one-half">
 			<h3>Column Heading</h3>
 			<p> Church-key dolore plaid PBR&B. Cillum artisan small batch laboris. Shabby chic food truck wayfarers, church-key bespoke skateboard laboris locavore listicle drinking vinegar tote bag wolf aliqua hoodie. Dreamcatcher Portland seitan occaecat officia XOXO. Forage eiusmod single-origin coffee, health goth taxidermy pork belly gluten-free sapiente mustache American Apparel asymmetrical chia. Keffiyeh eu reprehenderit letterpress sriracha. Kogi Odd Future forage non, fixie pickled slow-carb sint skateboard fanny pack fugiat.</p>

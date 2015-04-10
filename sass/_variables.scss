@@ -4,4 +4,12 @@ $headercolor: #A3B18A;
 $bgcolor: #D8D6D2;
 
 $footercolor: darken($headercolor, 15%);
+
+
 $breakpoint: 500px;
+
+
+// Responsive Screen Sizes
+$bigscreen: 1600px;
+$tablet: 800px;
+$phone: 480px;

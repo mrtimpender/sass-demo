@@ -18,7 +18,7 @@
 <body id="<?php echo $pageID; ?>">
 
 <header> 
-	<div class="row clearfix">
+	<div class="row">
 		<a href="index.php"><img class="logo" src="img\logo.png"/>
 		</a>
 
