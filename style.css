@@ -1,0 +1,133 @@
+/* Import Variables  */
+/* Columns & Rows */
+.row {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto 20px; }
+
+.column {
+  float: left;
+  margin-right: 2%; }
+  @media (max-width: 500px) {
+    .column {
+      width: 100% !important;
+      margin-right: 0; } }
+  .column:last-of-type {
+    margin-right: 0; }
+
+.column.two-third {
+  width: 65%; }
+
+.column.one-half {
+  width: 49%; }
+
+.column.one-third {
+  width: 32%; }
+
+/* -- Fourth Column
+.column.one-fourth{
+	width: 
+}
+--*/
+.column:last-of-type {
+  margin-right: 0; }
+
+/* Box Sizing */
+* {
+  box-sizing: border-box; }
+
+/* Clearfix */
+.clearfix {
+  *zoom: 1; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+/* Standards */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica, Sans-serif;
+  background: #D8D6D2; }
+
+a {
+  -webkit-transition: 333ms all ease-in-out;
+          transition: 333ms all ease-in-out;
+  text-decoration: none;
+  color: #344E41; }
+  a:hover {
+    color: #588157;
+    text-decoration: none; }
+
+/* -- Header --*/
+header {
+  background: #A3B18A;
+  padding: 10px;
+  margin-bottom: 20px; }
+  @media (max-width: 500px) {
+    header {
+      text-align: center; } }
+  body#home header {
+    margin-bottom: 0; }
+  header:hover {
+    color: #588157; }
+
+.logo {
+  float: left;
+  width: 65px; }
+  @media (max-width: 500px) {
+    .logo {
+      float: none;
+      width: 80px; } }
+
+header nav {
+  float: right;
+  text-align: right;
+  margin-top: 21px; }
+  @media (max-width: 500px) {
+    header nav {
+      float: none;
+      text-align: center; } }
+  header nav a {
+    margin-right: 20px;
+    font-size: 13px;
+    color: #344E41;
+    text-decoration: none; }
+    header nav a:last-of-type {
+      margin: 0; }
+
+/*-- Footer --*/
+footer {
+  background: #7e8f5f;
+  margin-top: 60px;
+  padding: 5px 0;
+  font-size: 11px;
+  text-align: center;
+  width: 100%; }
+
+/*-- Hero --*/
+.hero {
+  background: #D8D6D2;
+  background-image: url("img/drips.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+  .hero h1 {
+    margin: 0;
+    padding: 450px 0;
+    color: white;
+    text-shadow: 0 0 10px #A3BAC3;
+    text-align: center; }
+
+/*-- Responsive --*/
+@media (max-width: 500px) {
+  .column {
+    width: 100% !important;
+    margin-right: 0; } }
+
+/*# sourceMappingURL=style.css.map */
